@@ -84,7 +84,8 @@ def build_model():
         if not os.getenv("GOOGLE_API_KEY"):
             raise RuntimeError("Missing GOOGLE_API_KEY - check your .env file or environment settings")
         from langchain_google_genai import ChatGoogleGenerativeAI
-        return ChatGoogleGenerativeAI(model=os.getenv("MODEL_NAME", "gemini-3.5-flash-lite"), temperature=0)
+        # No temperature: newer Gemini models use fixed sampling and warn if it is set
+        return ChatGoogleGenerativeAI(model=os.getenv("MODEL_NAME", "gemini-3.5-flash-lite"))
 
     raise RuntimeError(f"Unknown LLM_PROVIDER '{provider}'. Use 'openai' or 'google'.")
 
