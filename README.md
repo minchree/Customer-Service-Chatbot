@@ -33,7 +33,7 @@ Each specialist is a small tool-calling loop (`LLM → tools → LLM → … →
 ### Google Colab (easiest)
 1. Open `customer_service_chatbot.ipynb` in Colab (File → Open notebook → GitHub tab → paste this repo's URL).
 2. Click the 🔑 **Secrets** icon in the left sidebar → **Add new secret**. Name it `GOOGLE_API_KEY` and paste a key from <https://aistudio.google.com/apikey>. Turn on *Notebook access*.
-3. In the first code cell, replace `YOUR-USERNAME/YOUR-REPO`. Then choose **Runtime → Run all**.
+3. Choose **Runtime → Run all**.
 
 ### GitHub Codespaces
 Add `GOOGLE_API_KEY` at <https://github.com/settings/codespaces> (New secret), open a Codespace on this repo, then run:
