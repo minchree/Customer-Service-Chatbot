@@ -1,0 +1,20 @@
+{
+  "configurations": [
+    {
+      "name": "Python: Run chatbot demo",
+      "type": "python",
+      "request": "launch",
+      "program": "chatbot.py",
+      "args": ["--demo"],
+      "envFile": "${workspaceFolder}/.env"
+    },
+    {
+      "name": "Python: Chat interactively",
+      "type": "python",
+      "request": "launch",
+      "program": "chatbot.py",
+      "console": "integratedTerminal",
+      "envFile": "${workspaceFolder}/.env"
+    }
+  ]
+}
